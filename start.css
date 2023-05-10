@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+
+}
+h2 {
+    color: white;
+    text-align: center;
+
+}
+
+#buttons {
+    text-align: center;
+}
+
+#levels {
+    background-color: #00cc00;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#levels:hover {
+    background-color: #009900;
+}
+#basketball-container{
+    position: relative;
+    height: 60vh;
+}
+
+#basketball {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 500px/500px;
+    background-color: #ee6730;
+}
+
+#middlebarhorizontal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 30px;
+    background-color: black;
+    /* border: 2px solid red; */
+}
+
+#middlebarvertical {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 550px;
+    background-color: black;
+    /* border: 2px solid red; */
+}
+
+#sideu1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(15%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 500px/500px;
+    background-color: transparent;
+    border: 30px solid black;
+}
+
+#sideu2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-115%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 500px/500px;
+    background-color: transparent;
+    border: 30px solid black;
+}
+
+

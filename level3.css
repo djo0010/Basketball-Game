@@ -1,0 +1,280 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+
+}
+
+#button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#shoot {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom, #50a3a2 0%, #53e3a6 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px #0a7e73;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#shoot:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px #53e3a6;
+}
+
+#container {
+    margin: 0 auto;
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    color: white;
+    border: 2px solid red;
+}
+
+#Level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    /* ensure text is vertically centered */
+
+
+}
+
+
+#player {
+    width: 50px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#head {
+    width: 25px;
+    height: 25px;
+    background-color: #ffd528;
+    border-radius: 25px/25px;
+    position: absolute;
+    bottom: 70px;
+    left: 12.5px;
+}
+
+#torso {
+    width: 30px;
+    height: 40px;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 32px;
+    left: 9.5px;
+}
+
+#arm1 {
+    width: 8px;
+    height: 25px;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 50px;
+    left: 32px;
+    transform: rotate(30deg);
+}
+
+#arm2 {
+    width: 8px;
+    height: 30px;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 55px;
+    left: 17px;
+    transform: rotate(60deg);
+}
+
+#leg1 {
+    width: 9px;
+    height: 40px;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 5px;
+    left: 13px;
+}
+
+#leg2 {
+    width: 9px;
+    height: 40px;
+    background-color: black;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 5px;
+    left: 26px;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px/30px;
+    background-color: orange;
+    position: absolute;
+    bottom: 70px;
+    left: 37.5px;
+}
+
+#pole {
+    width: 10px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+}
+
+#backboard {
+    width: 10px;
+    height: 70px;
+    background-color: green;
+    position: absolute;
+    bottom: 100px;
+    right: 35px;
+}
+
+#connector {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 100px;
+    right: 25px;
+    background-color: black;
+    border-radius: 100px 0 0 0;
+    transform: rotate(90deg);
+}
+
+#rim {
+    height: 20px;
+    width: 40px;
+    position: absolute;
+    bottom: 100px;
+    right: 45px;
+    background-color: orangered;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 78px;
+    left: 46px;
+    transform: rotate(00deg);
+    transform-origin: center bottom;
+    border: 2px solid red;
+}
+
+#arrow-body {
+    width: 3px;
+    height: 40px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    left: -1.6px;
+}
+
+#arrow-head {
+    width: 00px;
+    height: 00px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid blue;
+    position: absolute;
+    bottom: 40px;
+    left: -4.6px;
+}
+
+#menu-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#menu-button {
+    background-color: #00cc00;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    background-color: #009900;
+}
+
+.obstacles {
+    position: absolute;
+    background-color: rgb(0, 140, 255);
+}
+
+#obstacle1 {
+    width: 100px;
+    height: 250px;
+    bottom: 348px;
+    left: 100px;
+}
+
+#obstacle2 {
+    width: 100px;
+    height: 237px;
+    bottom: 00px;
+    left: 100px;
+}
+
+#obstacle3 {
+    width: 100px;
+    height: 10px;
+    bottom: 347px;
+    left: 100px;
+}
+
+
+
+#obstacle5 {
+    width: 150px;
+    height: 10px;
+    bottom: 240px;
+    left: 50px;
+}
+
+
+
+#trueGoal {
+    height: 15px;
+    width: 20px;
+    position: absolute;
+    bottom: 110px;
+    right: 55px;
+    background-color: white;
+}
